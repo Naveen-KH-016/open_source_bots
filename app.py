@@ -1,3 +1,4 @@
+#Importing Libraries
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -18,7 +19,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 
-
+#Reading PDFs
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
