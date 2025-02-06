@@ -19,7 +19,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 
-#Reading PDFs
+#Reading input PDFs
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
